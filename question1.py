@@ -1,11 +1,11 @@
-# Taking input from the user for obtained marks and maximum marks
+# Taking input from the user for obtained marks and total marks
 obtained_marks = int(input("Enter obtained marks: "))
-max_marks = int(input("Enter maximum marks: "))
+total_marks = int(input("Enter total marks: "))
 
-# Using try-except block to handle divide-by-zero error
-try:
+# Check if the obtained marks are greater than the total marks
+if obtained_marks <= total_marks and total_marks != 0:
     # Calculating the percentage and printing it
-    percentage = (obtained_marks / max_marks) * 100
+    percentage = (obtained_marks / total_marks) * 100
     print(f"Percentage: {format(percentage, '.2f')}%")
-except ZeroDivisionError:
-    print("Maximum marks can not be 0")
+else:
+    print("The Total marks should be greater than zero and cannot be less than the obtained marks.")
