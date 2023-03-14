@@ -13,14 +13,12 @@ for i in range(5):
 obtained_marks = sum(marks)
 
 # Check if the obtained marks are greater than the total marks
-if obtained_marks > total_marks:
-    print("The Total marks cannot be less than the obtained marks.")
-elif total_marks <= 0:
-    print("The Total marks should be greater than zero")
-else:
+if obtained_marks <= total_marks and total_marks > 0:
     # Calculate the percentage
     percentage = (obtained_marks / total_marks) * 100
 
     # Print the total obtained marks and percentage
     print(f"Total obtained marks: {obtained_marks}")
     print(f"Percentage: {percentage:.2f}%")
+else:
+    print("The Total marks should be greater than zero and cannot be less than the obtained marks.")
