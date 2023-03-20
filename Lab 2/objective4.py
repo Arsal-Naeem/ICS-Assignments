@@ -1,7 +1,7 @@
 # Prompt the user for a number between 1-3
 percentage = float(input("Enter your Percentage: "))
 
-# Compare the percentage with different grademarks and calculate the grade
+# Calculate the grade based on the percentage and print it
 if percentage >= 100:
     print("Invalid input")
 elif percentage >= 90:

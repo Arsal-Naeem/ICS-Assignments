@@ -1,8 +1,11 @@
-# Prompt the user for x and y coordinates of the point
-x,y = input("Enter (x,y) coordinates of the points: ").split(",")
+# Prompt the user to enter (x,y) coordinates of the point
+x, y = input("Enter (x,y) coordinates of the point: ").split(",")
 
-# Using formula: x²+y²=r² to check if the point lies within the circle
-if float(x)**2 + float(y)**2 > 10**2:
-    print("Outside the Circle")
+# Calculate the distance of the point from the origin
+distance = (float(x)**2 + float(y)**2) ** 0.5
+
+# Check if the distance is greater than the radius of the circle
+if distance > 10:
+    print("Outside the circle")
 else:
     print("Inside the circle")

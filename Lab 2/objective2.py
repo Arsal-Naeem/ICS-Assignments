@@ -1,7 +1,7 @@
-# Prompt the user for thier age
+# Prompt the user to enter their age and store it as an integer
 age = int(input("Enter your age: "))
 
-#Check the user age and print activities in accordance
+# Check the user age and print activities in accordance
 if age >= 18:
     print("You can vote")
 elif age == 17:

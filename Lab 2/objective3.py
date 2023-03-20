@@ -1,7 +1,7 @@
-# Prompt the user for a number between 1-3
+# Prompt the user to input a number between 1 and 3
 num = int(input("Input any number between 1-3: "))
 
-# Compare the user's input with 1, 2 and 3 and give output accordingly
+# Compare the user's input with 1, 2 and 3 and give an output accordingly
 if num == 1:
     print("Thank You")
 elif num == 2:
