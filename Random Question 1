@@ -1,0 +1,12 @@
+count = 0
+total = 0
+
+while True:
+    num = int(input("Enter a positive number: "))
+    if num < 0:
+        break
+    count += 1
+    total += num
+
+print(f"Count of positive numbers entered: {count}")
+print(f"Sum of positive numbers entered: {total}")
