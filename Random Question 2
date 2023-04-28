@@ -1,0 +1,38 @@
+# Initialize variables
+positive_sum = 0
+negative_count = 0
+total_count = 0
+
+# Loop until user presses enter key without typing a number
+while True:
+    try:
+        # Read input from user
+        num = input("Enter a number (press enter to exit): ")
+
+        # Check if input is empty, exit loop if true
+        if not num:
+            break
+
+        # Convert input to integer
+        num = int(num)
+
+        # Ignore zeros
+        if num == 0:
+            continue
+
+        # Increment total count
+        total_count += 1
+
+        # Check if number is positive or negative
+        if num > 0:
+            positive_sum += num
+        else:
+            negative_count += 1
+    except ValueError:
+        # Print error message if input cannot be converted to integer
+        print("Invalid input. Please enter a number.")
+
+# Print results
+print("Sum of positive numbers:", positive_sum)
+print("Count of negative numbers:", negative_count)
+print("Total count:", total_count)
